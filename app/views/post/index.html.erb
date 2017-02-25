@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+</head>
+<body>
+
+    <a href="/post/new">작성하기</a> </br></br>
+    <%@posts.each do |a| %>
+    <p>
+        "title :" <%=a.title %> </br>
+        "content :" <%=a.content %> </br>
+        "author_name :" <%=a.author_name %>
+    </p>
+    <a href="/post/<%=a.id%>">상세보기</a> </br></br>
+    <%end %>
+    
+    <p>현재 사용자가 작성한 글</p></br>
+    <%@current_user_content.each do |a| %>
+    <p>
+        "title :" <%=a.title %> </br>
+        "content :" <%=a.content %> </br>
+        "author_name :" <%=a.author_name %>
+    </p>
+    <a href="/post/<%=a.id%>">상세보기</a> </br></br>
+    <%end %>
+
+</body>
+</html>

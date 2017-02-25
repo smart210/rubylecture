@@ -1,0 +1,11 @@
+<p>수정 페이지 입니다.</p>
+
+<%= form_tag  "/fruit/#{@Fruit.id}", method: :patch do%>
+    과일 이름<input type="text" name="name" autofocus = "autofocus" value = "<%=@Fruit.name%>"/><br>
+    과일 가격<input type="text" name="price" value = "<%=@Fruit.price%>" /><br>
+    과일 색깔<input type="text" name="color" value = "<%=@Fruit.color%>"/><br>
+    과일 크기<input type="text" name="size" value = "<%=@Fruit.size%>"/><br>
+    과일 원산지<input type="text" name="country" value = "<%=@Fruit.country%>"/><br>
+    과일 제철<input type="text" name="season" value = "<%=@Fruit.season%>"/><br>
+    <input type="submit"/>
+<%end%>

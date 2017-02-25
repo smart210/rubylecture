@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+</head>
+<body>
+
+    <p>show page</p></br>
+    <a href="/post/index">목록으로가기</a> </br></br>
+
+    title : <%=@doc.title %> </br>
+    content : <%=@doc.content %> </br>
+    author_name : <%=@doc.author_name %> </br></br>
+
+    <a href="/post/<%=@doc.id %>/edit">수정하기 / </a>
+    <a href="/post/<%=@doc.id %>/destroy" data-confirm = "Are you sure?" data-method="delete">삭제하기</a> 
+
+</body>
+</html>
+
+
+
+
+ 

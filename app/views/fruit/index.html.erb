@@ -1,0 +1,16 @@
+<h1>Fruit#index</h1>
+<p>Find me in app/views/fruit/index.html.erb</p>
+
+
+<% @Fruit.each do |a| %>
+<p>
+    name : <%=a.name%> </br>
+    price : <%=a.price%> </br>
+    color : <%=a.color%> </br>
+    size : <%=a.size%> </br>
+    country : <%=a.country%> </br>
+    season : <%=a.season%> </br>
+</p>
+<%end%>
+
+<a href="/fruit/new">과일 작성하기</a>

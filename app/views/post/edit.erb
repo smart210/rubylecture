@@ -1,0 +1,6 @@
+<%= form_tag  "/post/#{@doc.id}", method: :patch do%>
+    타이틀<input type="text" name="title" autofocus = "autofocus" value= "<%=@doc.title%>"/><br>
+    내용<textarea type="text" name="content" ><%=@doc.content%></textarea></br>
+    작가<input type="text" name="author_name" value= "<%=@doc.author_name%>"/></br>
+    <input type="submit"/>
+<%end%>

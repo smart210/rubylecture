@@ -1,0 +1,8 @@
+<%= form_tag  '/post/create' do%>
+    타이틀<input type="text" name="title" autofocus = "autofocus"/><br>
+    내용<textarea type="text" name="content" placeholder="내용을 입력하세요"></textarea></br>
+    작가<input type="text" name="author_name" /></br>
+    <label for="avatar">파일 업로드 : </label>
+    <input id="avatar" type="file" name="avatar"/>
+    <input type="submit"/>
+<%end%>
